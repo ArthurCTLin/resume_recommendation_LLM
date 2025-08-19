@@ -21,4 +21,4 @@ jobs:
           git config --global user.email "arthur830119@gmail.com"
           git config --global user.name "ArthurLin"
           git remote add hf https://user:${HF_TOKEN}@huggingface.co/spaces/ArthurLin/resume_recommendation_LLM
-          git push hf master --force
+          git push hf main --force
