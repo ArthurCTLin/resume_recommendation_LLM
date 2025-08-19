@@ -24,8 +24,6 @@ jobs:
         run: huggingface-cli login --token ${{ secrets.RESUME_LLM }}
 
       - name: Push to Hugging Face Space
-        env:
-          HF_TOKEN: ${{ secrets.RESUME_LLM }}
         run: |
           git config --global user.email "arthur830119@gmail.com"
           git config --global user.name "ArthurLin"
