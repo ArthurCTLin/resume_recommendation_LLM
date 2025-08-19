@@ -2,18 +2,34 @@ name: Deploy to Hugging Face Space
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Push to Hugging Face Space
-        uses: huggingface/huggingface-cli-action@v0.1.0
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          repo: spaces/ArthurLin/resume_recommendation_LLM
-          token: ${{ secrets.HF_TOKEN }}
+          python-version: "3.x"
 
+      - name: Install huggingface_hub
+        run: pip install huggingface_hub
+
+      - name: Login to Hugging Face
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: huggingface-cli login --token $HF_TOKEN
+
+      - name: Push to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git config --global user.email "arthur830119@gmail.com"
+          git config --global user.name "ArthurLin"
+          git remote add hf https://huggingface.co/spaces/ArthurLin/resume_recommendation_LLM
+          git push hf main --force
