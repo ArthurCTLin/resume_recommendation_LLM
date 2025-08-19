@@ -1,0 +1,35 @@
+# Core
+transformers==4.41.1
+sentence-transformers==2.2.2
+torch==1.13.1
+torchaudio==0.13.1
+torchvision==0.14.1
+faiss-cpu==1.9.0
+
+# Web UI
+gradio==3.50.2
+uvicorn==0.35.0
+fastapi==0.116.1
+
+# Data handling
+pandas==2.3.1
+numpy==1.25.0
+scikit-learn==1.7.1
+scipy==1.15.3
+PyYAML==6.0.2
+pdfplumber
+pydub==0.25.1
+
+# Visual / Debugging
+matplotlib==3.10.5
+seaborn==0.13.2
+tqdm==4.67.1
+
+# Utility
+regex==2024.11.6
+requests==2.32.4
+sentencepiece==0.2.0
+orjson==3.11.2
+
+# Optional
+nltk==3.9.1

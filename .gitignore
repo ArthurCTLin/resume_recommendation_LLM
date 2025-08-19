@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+uploads/
+*.csv
+*.log
+.env
+*.tmp
+gradio_tmp/
+data/
