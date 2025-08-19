@@ -5,7 +5,6 @@ torch==1.13.1
 torchaudio==0.13.1
 torchvision==0.14.1
 faiss-cpu==1.9.0
-pdfplumber
 
 # Web UI
 gradio==3.50.2
@@ -20,6 +19,7 @@ scipy==1.15.3
 PyYAML==6.0.2
 pdfplumber
 pydub==0.25.1
+PyMuPDF==1.23.9
 
 # Visual / Debugging
 matplotlib==3.10.5
