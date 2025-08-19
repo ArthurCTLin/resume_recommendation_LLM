@@ -11,5 +11,5 @@ This tool allows you to:
 - Explains the match using a language model
 
 ### Model Used
-- *****Embedding model:** `sentence-transformers/all-MiniLM-L6-v2`
+- **Embedding model:** `sentence-transformers/all-MiniLM-L6-v2`
 - **Summary and explanation model:** `meta-llama/Meta-Llama-3-8B-Instruct`
