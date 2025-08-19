@@ -1,0 +1,19 @@
+name: Deploy to Hugging Face Space
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Push to Hugging Face Space
+        uses: huggingface/huggingface-cli-action@v0.1.0
+        with:
+          repo: spaces/ArthurLin/resume_recommendation_LLM
+          token: ${{ secrets.HF_TOKEN }}
+
