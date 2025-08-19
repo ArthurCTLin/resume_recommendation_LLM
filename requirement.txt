@@ -5,7 +5,7 @@ torch==1.13.1
 torchaudio==0.13.1
 torchvision==0.14.1
 faiss-cpu==1.9.0
-pymupdf
+pdfplumber
 
 # Web UI
 gradio==3.50.2

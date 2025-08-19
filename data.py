@@ -1,14 +1,14 @@
-import fitz
 import os
+import pdfplumber
 
 def load_text(path):
     file_extension = os.path.splitext(path)[1].lower()
-    
+
     if file_extension == ".pdf":
-        doc = fitz.open(path)
         texts = []
-        for page in doc:
-            texts.append(page.get_text())
+        with pdfplumber.open(path) as pdf:
+            for page in pdf.pages:
+                texts.append(page.extract_text() or "")
         return "\n".join(texts)
     
     elif file_extension == ".txt":
