@@ -1,15 +1,21 @@
 # Resume Matcher with LLM & Embedding
+This resume matcher helps HR professionals and recruiters efficiently identify candidates who best align with a given job description. By combining semantic understanding and AI-powered analysis, it goes beyond keyword matching to evaluate true fit.
 
-This tool allows you to:
-- Upload a **Job Description** and **one or more Resumes**
-- Adjust section weights like experience, skills, etc.
-- Get **similarity scores** and a **LLM-generated explanation**
+### ⚙️ How It Works
+The tool leverages a large language model (LLM) to analyze both the job description and resumes. It summarizes each document into five essential dimensions:
+- **Experience & Achievements**
+- **Skills & Competencies**
+- **Culture Fit**
+- **Personal Traits**
+- **Education**
+These structured summaries are then converted into embeddings. The tool calculates similarity scores across each of the five dimensions to provide a context-aware comparison between the job description and resumes.
 
 ### Features
-- Support PDF / TXT files
-- Uses `sentence-transformers` and custom section weighting
+- Supports **PDF** and **TXT** file formats
+- Upload one or multiple resumes to match against a single job description
+  - **One resume:**  user can get the similarity score with detailed explanation
+  - **Multiple resumes:** user can receive ranked similarity scores (no explanation for batch)
+- Custom section weighting
 - Explains the match using a language model
+- Automatically records results to results.csv for persistent matching history and reusability
 
-### Model Used
-- **Embedding model:** `sentence-transformers/all-MiniLM-L6-v2`
-- **Summary and explanation model:** `meta-llama/Meta-Llama-3-8B-Instruct`
