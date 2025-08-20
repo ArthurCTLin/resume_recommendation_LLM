@@ -26,7 +26,7 @@ These structured summaries are then converted into embeddings. The tool calculat
 
 ## Implementation
 ### CLI
-#### 📌 Basic Arguments
+#### Basic Arguments
 
 | Argument           | Description |
 |--------------------|-------------|
@@ -41,6 +41,8 @@ These structured summaries are then converted into embeddings. The tool calculat
 | `--sort`           | Sort similarity scores in descending order |
 | `--top_k`          | Show top K results from record |
 | `--weight_config`  | YAML file with custom section weights |
+#### Example
+`python main.py --jd data/jd.txt --cv data/resume.pdf`
 
 ## 🧾 Outcome Illustration
 * **Single Resume Matching**
