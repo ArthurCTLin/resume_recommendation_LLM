@@ -8,9 +8,10 @@ The tool leverages a large language model (LLM) to analyze both the job descript
 - **Culture Fit**
 - **Personal Traits**
 - **Education**
+
 These structured summaries are then converted into embeddings. The tool calculates similarity scores across each of the five dimensions to provide a context-aware comparison between the job description and resumes.
 
-### Features
+### 🔍 Features
 - Supports **PDF** and **TXT** file formats
 - Upload one or multiple resumes to match against a single job description
   - **One resume:**  user can get the similarity score with detailed explanation
