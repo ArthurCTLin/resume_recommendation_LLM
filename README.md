@@ -43,11 +43,17 @@ These structured summaries are then converted into embeddings. The tool calculat
 | `--weight_config`  | YAML file with custom section weights |
 #### Example
 * **Match a Single Resume**
+
 `python main.py --jd data/jd.txt --cv data/resume.pdf`
+
 * **Match a Folder of Resumes (Batch Mode)**
+
 `python main.py --jd data/jd.txt --cv_folder data/resumes/`
+
 * **Use Custom Weighting (YAML)**
+
 python main.py --jd data/jd.txt --cv data/resume.pdf --weight_config config/weights.yaml`
+
 * **Record and View Results**
 ```
 # Run and record
