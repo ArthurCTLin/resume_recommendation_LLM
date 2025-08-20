@@ -1,4 +1,4 @@
-# Resume Matcher with LLM & Embedding
+# 📄 Resume Matcher with LLM & Embedding
 This resume matcher helps HR professionals and recruiters efficiently identify candidates who best align with a given job description. By combining semantic understanding and AI-powered analysis, it goes beyond keyword matching to evaluate true fit.
 
 ## ⚙️ How It Works
@@ -20,9 +20,9 @@ These structured summaries are then converted into embeddings. The tool calculat
 - Explains the match using a language model
 - Automatically records results to results.csv for persistent matching history and reusability
 
-## Implementation
-### CLI
-#### Basic Arguments
+## 🛠️ Implementation
+### 🖥️ CLI
+#### 📝 Basic Arguments
 
 | Argument           | Description |
 |--------------------|-------------|
@@ -37,7 +37,7 @@ These structured summaries are then converted into embeddings. The tool calculat
 | `--sort`           | Sort similarity scores in descending order |
 | `--top_k`          | Show top K results from record |
 | `--weight_config`  | YAML file with custom section weights |
-#### Example
+#### ⚡ Example
 * **Match a Single Resume**
 
   `python main.py --jd data/jd.txt --cv data/resume.pdf`
@@ -62,7 +62,7 @@ These structured summaries are then converted into embeddings. The tool calculat
   python main.py --records results.csv --list --filter_jd jd.txt --sort --top_k 5
   ```
 
-### API
+### 🌐 API
 This system provides two main API endpoints for calculating similarity between resumes and job descriptions (JD).
 
 #### `/compare/single`  
@@ -115,13 +115,13 @@ Compare a single resume against a job description and get a detailed explanation
     }
     ```
 
-## Demo
+## 🎛️ Demo
 This demo app allows you to upload a Job Description and one or multiple Resumes for similarity matching. You can adjust the importance (weights) of five resume sections before running the matching.
 
-### Launch
+### 🚀 Launch
 `python app.py`
 
-### How to Use:
+### 🧑‍💻 How to Use:
 1. Upload your Job Description file
 2. Upload one or multiple resume files
 3. Adjust the section weights (ensure they roughly sum to 1.0)
