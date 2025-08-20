@@ -87,38 +87,38 @@ Compare a single resume against a job description and get a detailed explanation
 
 * **Sample Response (JSON)**
   * **Single**
-```json
-{
-  "resume": "resume1.pdf",
-  "jd": "jd1.txt",
-  "similarity_score": 0.8235,
-  "section_scores": {
-    "Experience & Achievements": 0.81,
-    "Skills & Competencies": 0.84,
-    "Culture Fit": 0.79,
-    "Personal Traits": 0.85,
-    "Education": 0.80
-  },
-  "explanation": "The resume aligns well with the job requirements, especially in skills and experience..."
-}
-```
-* **Batch**
-```
-{
-  "results": [
+    ```json
     {
-      "JD": "jd1.txt",
-      "Resume": "resume1.pdf",
-      "Similarity Score": 0.8235
-    },
-    {
-      "JD": "jd1.txt",
-      "Resume": "resume2.pdf",
-      "Similarity Score": 0.7482
+      "resume": "resume1.pdf",
+      "jd": "jd1.txt",
+      "similarity_score": 0.8235,
+      "section_scores": {
+        "Experience & Achievements": 0.81,
+        "Skills & Competencies": 0.84,
+        "Culture Fit": 0.79,
+        "Personal Traits": 0.85,
+        "Education": 0.80
+      },
+      "explanation": "The resume aligns well with the job requirements, especially in skills and experience..."
     }
-  ]
-}
-```
+    ```
+  * **Batch**
+    ```
+    {
+      "results": [
+        {
+          "JD": "jd1.txt",
+          "Resume": "resume1.pdf",
+          "Similarity Score": 0.8235
+        },
+        {
+          "JD": "jd1.txt",
+          "Resume": "resume2.pdf",
+          "Similarity Score": 0.7482
+        }
+      ]
+    }
+    ```
 ## 🧾 Outcome Illustration
 * **Single Resume Matching**
 <p align="center">
