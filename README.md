@@ -11,10 +11,6 @@ The tool leverages a large language model (LLM) to analyze both the job descript
 
 These structured summaries are then converted into embeddings. The tool calculates similarity scores across each of the five dimensions to provide a context-aware comparison between the job description and resumes.
 
-<p align="center">
-<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/02c7e39e-e42b-4bed-b9d5-5eb1442d6095" />
-</p>
-
 ## 🔍 Features
 - Supports **PDF** and **TXT** file formats
 - Upload one or multiple resumes to match against a single job description
@@ -131,6 +127,10 @@ This demo app allows you to upload a Job Description and one or multiple Resumes
 3. Adjust the section weights (ensure they roughly sum to 1.0)
 4. Click "Run Matching"  
 5. View similarity scores and explanations for single mode or a ranked table for batch mode
+
+<p align="center">
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/02c7e39e-e42b-4bed-b9d5-5eb1442d6095" />
+</p>
 
 ### 🧾 Outcome Illustration
 * **Single Resume Matching**
