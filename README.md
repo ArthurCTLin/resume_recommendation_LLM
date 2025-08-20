@@ -69,7 +69,6 @@ These structured summaries are then converted into embeddings. The tool calculat
 ### API
 This system provides two main API endpoints for calculating similarity between resumes and job descriptions (JD).
 
----
 #### `/compare/single`  
 Compare a single resume against a job description and get a detailed explanation.
 
@@ -119,7 +118,21 @@ Compare a single resume against a job description and get a detailed explanation
       ]
     }
     ```
-## 🧾 Outcome Illustration
+
+## Demo
+This demo app allows you to upload a Job Description and one or multiple Resumes for similarity matching. You can adjust the importance (weights) of five resume sections before running the matching.
+
+### Launch
+`python app.py`
+
+### How to Use:
+1. Upload your Job Description file
+2. Upload one or multiple resume files
+3. Adjust the section weights (ensure they roughly sum to 1.0)
+4. Click "Run Matching"  
+5. View similarity scores and explanations for single mode or a ranked table for batch mode
+
+### 🧾 Outcome Illustration
 * **Single Resume Matching**
 <p align="center">
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/9c950765-605f-49da-9210-4783c5543bad" />
