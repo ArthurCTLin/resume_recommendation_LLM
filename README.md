@@ -77,6 +77,7 @@ Compare a single resume against a job description and get a detailed explanation
 `POST`
 
 * **Form Data**
+
 | Parameter       | Type        | Required | Description                          |
 |-----------------|-------------|----------|------------------------------------|
 | `jd_file`       | File        | Yes      | Job Description file (PDF or TXT)  |
