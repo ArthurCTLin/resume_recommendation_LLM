@@ -24,6 +24,6 @@ These structured summaries are then converted into embeddings. The tool calculat
 - Custom section weighting
 - Explains the match using a language model
 - Automatically records results to results.csv for persistent matching history and reusability
-<img width="844" height="864" alt="image" src="https://github.com/user-attachments/assets/09029406-5566-4eb1-9fb3-9eec0b30729d" />
+<img width="422" height="422" alt="image" src="https://github.com/user-attachments/assets/09029406-5566-4eb1-9fb3-9eec0b30729d" />
 
 
