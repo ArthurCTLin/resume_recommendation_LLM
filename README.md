@@ -100,9 +100,9 @@ Compare a single resume against a job description and get a detailed explanation
   },
   "explanation": "The resume aligns well with the job requirements, especially in skills and experience..."
 }
-
+```
 * **Batch**
-
+```
 {
   "results": [
     {
@@ -117,7 +117,7 @@ Compare a single resume against a job description and get a detailed explanation
     }
   ]
 }
-
+```
 ## 🧾 Outcome Illustration
 * **Single Resume Matching**
 <p align="center">
