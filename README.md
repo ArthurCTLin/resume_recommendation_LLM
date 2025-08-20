@@ -66,6 +66,58 @@ python main.py --records results.csv --list
 python main.py --records results.csv --list --filter_jd jd.txt --sort --top_k 5
 ```
 
+### API
+This system provides two main API endpoints for calculating similarity between resumes and job descriptions (JD).
+
+---
+#### `/compare/single`  
+Compare a single resume against a job description and get a detailed explanation.
+
+* **Method**
+`POST`
+
+* **Form Data**
+| Parameter       | Type        | Required | Description                          |
+|-----------------|-------------|----------|------------------------------------|
+| `jd_file`       | File        | Yes      | Job Description file (PDF or TXT)  |
+| `cv_file`       | File        | Yes      | Resume file (PDF or TXT)            |
+| `weights_file`  | File        | No       | Optional YAML file for custom weights |
+| `model_id`      | String      | No       | Embedding model ID (default: `sentence-transformers/all-MiniLM-L6-v2`) |
+
+* **Sample Response (JSON)**
+  * **Single**
+```json
+{
+  "resume": "resume1.pdf",
+  "jd": "jd1.txt",
+  "similarity_score": 0.8235,
+  "section_scores": {
+    "Experience & Achievements": 0.81,
+    "Skills & Competencies": 0.84,
+    "Culture Fit": 0.79,
+    "Personal Traits": 0.85,
+    "Education": 0.80
+  },
+  "explanation": "The resume aligns well with the job requirements, especially in skills and experience..."
+}
+
+* **Batch**
+
+{
+  "results": [
+    {
+      "JD": "jd1.txt",
+      "Resume": "resume1.pdf",
+      "Similarity Score": 0.8235
+    },
+    {
+      "JD": "jd1.txt",
+      "Resume": "resume2.pdf",
+      "Similarity Score": 0.7482
+    }
+  ]
+}
+
 ## 🧾 Outcome Illustration
 * **Single Resume Matching**
 <p align="center">
