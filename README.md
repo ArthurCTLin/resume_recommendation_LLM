@@ -25,7 +25,7 @@ These structured summaries are then converted into embeddings. The tool calculat
 - Explains the match using a language model
 - Automatically records results to results.csv for persistent matching history and reusability
 
-### 🧾 Outcome
+### 🧾 Outcome Illustration
 * **Single Resume Matching**
 <p align="center">
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/9c950765-605f-49da-9210-4783c5543bad" />
