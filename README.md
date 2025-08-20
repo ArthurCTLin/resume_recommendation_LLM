@@ -27,10 +27,12 @@ These structured summaries are then converted into embeddings. The tool calculat
 
 ***Outcome***
 * **Single**
+<p align="center">
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/9c950765-605f-49da-9210-4783c5543bad" />
-
+</p>
 * **Batch**
+<p align="center">
 <img width="1353" height="205" alt="image" src="https://github.com/user-attachments/assets/b8db9d36-9df0-42d3-a50e-0e4c7e5f4e89" />
-
+</p>
 
 
