@@ -15,7 +15,7 @@ def run_single_similarity(jd_path, cv_path, SECTION_WEIGHTS, model_id="sentence-
     weighted_scores = sum(scores[k] * SECTION_WEIGHTS.get(k, 0) for k in scores)
     return round(float(weighted_scores), 4), scores
 
-def run_batch_similarity(jd_path, cv_input, SECTION_WEIGHTS, model_id="sentence-transformers/all-MiniLM-L6-v2", llm_model="meta-ll    ama/Meta-Llama-3-8B-Instruct", pipe=None):
+def run_batch_similarity(jd_path, cv_input, SECTION_WEIGHTS, model_id="sentence-transformers/all-MiniLM-L6-v2", llm_model="meta-llama/Meta-Llama-3-8B-Instruct", pipe=None):
     
     jd_text = load_text(jd_path)
     jd_embeddings, _ = generate_summary_and_embedding(jd_text, text_type="job_description", model_id=model_id, llm_model=llm_model, pipe=pipe)
