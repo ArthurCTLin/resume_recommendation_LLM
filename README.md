@@ -47,16 +47,18 @@ These structured summaries are then converted into embeddings. The tool calculat
 * **Match a Folder of Resumes (Batch Mode)**
 `python main.py --jd data/jd.txt --cv_folder data/resumes/`
 * **Use Custom Weighting (YAML)**
-```python main.py --jd data/jd.txt --cv data/resume.pdf --weight_config config/weights.yaml`
+python main.py --jd data/jd.txt --cv data/resume.pdf --weight_config config/weights.yaml`
 * **Record and View Results**
-`# Run and record
+‵‵‵
+# Run and record
 python main.py --jd data/jd.txt --cv_folder data/resumes/ --records results.csv
 
 # View all results
 python main.py --records results.csv --list
 
 # Filter by JD and sort by score
-python main.py --records results.csv --list --filter_jd jd.txt --sort --top_k 5```
+python main.py --records results.csv --list --filter_jd jd.txt --sort --top_k 5
+‵‵‵
 
 ## 🧾 Outcome Illustration
 * **Single Resume Matching**
