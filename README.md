@@ -78,12 +78,12 @@ Compare a single resume against a job description and get a detailed explanation
 
 * **Form Data**
 
-| Parameter       | Type        | Required | Description                          |
-|-----------------|-------------|----------|------------------------------------|
-| `jd_file`       | File        | Yes      | Job Description file (PDF or TXT)  |
-| `cv_file`       | File        | Yes      | Resume file (PDF or TXT)            |
-| `weights_file`  | File        | No       | Optional YAML file for custom weights |
-| `model_id`      | String      | No       | Embedding model ID (default: `sentence-transformers/all-MiniLM-L6-v2`) |
+  | Parameter       | Type        | Required | Description                          |
+  |-----------------|-------------|----------|------------------------------------|
+  | `jd_file`       | File        | Yes      | Job Description file (PDF or TXT)  |
+  | `cv_file`       | File        | Yes      | Resume file (PDF or TXT)            |
+  | `weights_file`  | File        | No       | Optional YAML file for custom weights |
+  | `model_id`      | String      | No       | Embedding model ID (default: `sentence-transformers/all-MiniLM-L6-v2`) |
 
 * **Sample Response (JSON)**
   * **Single**
