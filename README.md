@@ -11,7 +11,7 @@ The tool leverages a large language model (LLM) to analyze both the job descript
 
 These structured summaries are then converted into embeddings. The tool calculates similarity scores across each of the five dimensions to provide a context-aware comparison between the job description and resumes.
 
-$\quad$ <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/02c7e39e-e42b-4bed-b9d5-5eb1442d6095" />
+$\qquad \quad$ <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/02c7e39e-e42b-4bed-b9d5-5eb1442d6095" />
 
 
 ### 🔍 Features
