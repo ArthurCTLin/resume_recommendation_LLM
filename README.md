@@ -52,7 +52,7 @@ These structured summaries are then converted into embeddings. The tool calculat
 
 * **Use Custom Weighting (YAML)**
 
-python main.py --jd data/jd.txt --cv data/resume.pdf --weight_config config/weights.yaml`
+`python main.py --jd data/jd.txt --cv data/resume.pdf --weight_config config/weights.yaml`
 
 * **Record and View Results**
 ```
