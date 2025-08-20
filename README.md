@@ -49,7 +49,7 @@ These structured summaries are then converted into embeddings. The tool calculat
 * **Use Custom Weighting (YAML)**
 python main.py --jd data/jd.txt --cv data/resume.pdf --weight_config config/weights.yaml`
 * **Record and View Results**
-‵‵‵
+```
 # Run and record
 python main.py --jd data/jd.txt --cv_folder data/resumes/ --records results.csv
 
@@ -58,7 +58,7 @@ python main.py --records results.csv --list
 
 # Filter by JD and sort by score
 python main.py --records results.csv --list --filter_jd jd.txt --sort --top_k 5
-‵‵‵
+```
 
 ## 🧾 Outcome Illustration
 * **Single Resume Matching**
